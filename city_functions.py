@@ -14,7 +14,7 @@ def input_city_country():
         population = input("Enter the population (optional): ")
 
         def city_country(city, country, population=None):
-            result = f"{city}, {country}"
+            result = f"{city.title()}, {country.title()}"
             if population is not None:
                 result += f", {population}"
             return result
